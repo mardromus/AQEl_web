@@ -1,7 +1,13 @@
 import React from 'react';
 import { Section } from './Section';
 
-const KeyPoint = ({ children }: { children: React.ReactNode }) => (
+// FIX: Extracted props into a dedicated interface to improve type clarity and
+// resolve a subtle TypeScript issue causing false-positive "missing children" errors.
+interface KeyPointProps {
+  children: React.ReactNode;
+}
+
+const KeyPoint = ({ children }: KeyPointProps) => (
   <li className="flex items-start gap-4">
     <svg className="h-8 w-8 flex-shrink-0 text-[var(--primary)] mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
