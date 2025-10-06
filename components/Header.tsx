@@ -32,14 +32,7 @@ export const Header: React.FC = () => {
         >
           View Full Paper
         </a>
-        <a 
-          href="https://github.com/mardromus/AQEL"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-8 py-3 rounded-md text-lg font-semibold text-[var(--primary)] bg-transparent border-2 border-[var(--primary)] transition-all duration-300 hover:bg-[var(--primary)]/10"
-        >
-          View Code
-        </a>
+        
         <a
           href="https://github.com/mardromus/AQEL"
           target="_blank"
